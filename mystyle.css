@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    font-size: 15px; 
+}
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.wrapper{
+    border-radius: 10px;
+    /* the following commands divide the wrapper into 2 equal parts */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* the edges of the inserted image does not comply with the border (it overflows!) so solution is below */
+    overflow: hidden;
+    margin: 2rem;
+}
+.text-content{
+    padding: 7%;
+}
+.box-orange{
+    background: hsl(31, 77%, 52%);
+    padding: 30px;
+}
+.box-blue{
+    background: hsl(184, 100%, 22%);
+    padding: 30px;
+}
+.box-green{
+    background: hsl(179, 100%, 13%);
+    padding: 30px;
+}
+.header{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 5px 13px 30px; 
+    font-weight: 700;
+}
+.subtitle{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    padding: 0% 7% 40%;
+}
+.button-orange{
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(31, 77%, 52%);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 7%;
+    margin-bottom: 30px;  
+}
+.button-blue{
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(184, 100%, 22%);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 7%;
+    margin-bottom: 30px;  
+}
+.button-green{
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(179, 100%, 13%);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 7%;
+    margin-bottom: 30px;  
+}
+.image-content{
+    padding: 20px;
+}
