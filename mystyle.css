@@ -17,11 +17,9 @@ body{
 }
 .wrapper{
     border-radius: 10px;
-    /* the following commands divide the wrapper into 2 equal parts */
+    /* the following commands divide the wrapper into 3 equal parts */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* the edges of the inserted image does not comply with the border (it overflows!) so solution is below */
-    overflow: hidden;
     margin: 2rem;
 }
 .text-content{
@@ -29,15 +27,17 @@ body{
 }
 .box-orange{
     background: hsl(31, 77%, 52%);
-    padding: 30px;
+    padding: 30px 30px 40px;
 }
 .box-blue{
     background: hsl(184, 100%, 22%);
     padding: 30px;
+    padding: 30px 30px 40px;
 }
 .box-green{
     background: hsl(179, 100%, 13%);
     padding: 30px;
+    padding: 30px 30px 40px;
 }
 .header{
     color: hsl(0, 0%, 95%);
@@ -61,8 +61,18 @@ body{
     color: hsl(31, 77%, 52%);
     font-weight: 700;
     text-decoration: none;
-    margin: 7%;
-    margin-bottom: 30px;  
+    margin: 7%; 
+}
+a.button-orange:hover{
+    border: solid 3px;
+    border-radius: 30px;
+    background-color: hsl(31, 77%, 52%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 7%; 
 }
 .button-blue{
     border: none;
@@ -74,7 +84,17 @@ body{
     font-weight: 700;
     text-decoration: none;
     margin: 7%;
-    margin-bottom: 30px;  
+}
+a.button-blue:hover{
+    border: solid 3px;
+    border-radius: 30px;
+    background-color: hsl(184, 100%, 22%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 7%; 
 }
 .button-green{
     border: none;
@@ -85,9 +105,34 @@ body{
     color: hsl(179, 100%, 13%);
     font-weight: 700;
     text-decoration: none;
-    margin: 7%;
-    margin-bottom: 30px;  
+    margin: 7%; 
+}
+a.button-green:hover{
+    border: solid 3px;
+    border-radius: 30px;
+    background-color: hsl(179, 100%, 13%);
+    padding: 5% 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 7%; 
 }
 .image-content{
-    padding: 20px;
+    padding: 10px;
+}
+/* for mobile version */
+@media only screen and (max-width:425px){
+    body{
+        text-align: left;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .box-orange, .box-blue, .box-green{
+        order: -1;
+    }
+    .subtitle{
+        padding: 0% 7% 15%;
+    }
 }
